@@ -14,5 +14,8 @@ gpg --keyserver pgp.mit.edu --recv-keys 0353B12C
 gpg --export --armor 0353B12C | sudo apt-key add - 
 sudo apt-get update
 sudo apt-get install cassandra
-sudo service cassandra status
+sudo service cassandra stop
+sudo chown -R cassandra /var/lib/cassandra
+sudo chown -R cassandra /var/log/cassandra
+sudo service cassandra start
 sudo nodetool status
