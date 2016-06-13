@@ -1,5 +1,5 @@
 sudo service docker stop
-sudo apt-get remove docker-engine
+sudo apt-get purge docker-engine
 cd /var/lib
 sudo rm -r kubelet
 sudo rm -r docker
