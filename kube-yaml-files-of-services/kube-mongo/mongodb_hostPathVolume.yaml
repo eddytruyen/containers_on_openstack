@@ -31,6 +31,5 @@ spec:
           name: mypd
       volumes:
         - name: mypd
-          hostPath:
-            path: /my/own/datadir2
-             
+          persistentVolumeClaim:
+             claimName: myclaim-1
