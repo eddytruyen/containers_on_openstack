@@ -1,2 +1,2 @@
-service flocker-dataset-agent start
-service flocker-container-agent start
+service flocker-dataset-agent restart
+service flocker-container-agent restart
