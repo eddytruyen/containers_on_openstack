@@ -14,5 +14,5 @@ dataset:
    auth_plugin: "password"
    auth_url: "http://dnetcloud.cs.kuleuven.be:5000/v2.0"
    username: "eddy"
-   password: "garage4bout7Monday"
-   tenant-id: "139894a942a04bc2bfb6591beeb349f6"
+   password: ""
+   tenant-id: ""
