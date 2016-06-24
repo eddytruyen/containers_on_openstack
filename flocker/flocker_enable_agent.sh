@@ -1,2 +1,2 @@
-sudo service flocker-dataset-agent start
-sudo service flocker-container-agent start
+service flocker-dataset-agent start
+service flocker-container-agent start
