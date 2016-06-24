@@ -1,2 +1,2 @@
-service flocker-dataset-agent restart
-service flocker-container-agent restart
+sudo service flocker-dataset-agent restart
+sudo service flocker-container-agent restart
