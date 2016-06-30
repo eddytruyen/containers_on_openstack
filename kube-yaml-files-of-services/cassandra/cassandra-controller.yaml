@@ -14,14 +14,14 @@ spec:
         name: cassandra
     spec:
       containers:
-        - command:
-            - /run.sh
-          image: cassandra:2.0
+        - image: cassandra:2.0
           name: cassandra
           ports:
             - containerPort: 9042
+              hostPort: 9042
               name: cql
             - containerPort: 9160
+              hostPort:9160
               name: thrift
           volumeMounts:
             - mountPath: /var/lib/cassandra
@@ -31,5 +31,5 @@ spec:
       volumes:
         - name: mypd
           hostPath:
-            path: /data/db
+            path: /data/cassandra/db
 
