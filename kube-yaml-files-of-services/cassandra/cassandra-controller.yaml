@@ -21,7 +21,7 @@ spec:
               hostPort: 9042
               name: cql
             - containerPort: 9160
-              hostPort:9160
+              hostPort: 9160
               name: thrift
           volumeMounts:
             - mountPath: /var/lib/cassandra
