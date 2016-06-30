@@ -207,8 +207,6 @@ start_k8s() {
             --cluster-dns=10.0.0.10 \
             --cluster-domain=cluster.local \
             --containerized \
-            --cloud-provider=openstack \
-            --cloud-config=/etc/kubernetes/cloud_config \
             --v=2
 
     docker run \
