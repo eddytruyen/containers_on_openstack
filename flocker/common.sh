@@ -342,6 +342,11 @@ kube::multinode::start_k8s_master() {
   # TODO: Get rid of --hostname-override
   docker run -d \
     -v /etc/flocker:/etc/flocker \
+    -e "FLOCKER_CONTROL_SERVICE_HOST=172.17.13.43" \
+    -e "FLOCKER_CONTROL_SERVICE_PORT=4523" \
+    -e "FLOCKER_CONTROL_SERVICE_CA_FILE=/etc/flocker/cluster.crt" \
+    -e "FLOCKER_CONTROL_SERVICE_CLIENT_KEY_FILE=/etc/flocker/control-service.key" \
+    -e "FLOCKER_CONTROL_SERVICE_CLIENT_CERT_FILE=/etc/flocker/control-service.crt" \
     --net=host \
     --pid=host \
     --privileged \
@@ -369,6 +374,11 @@ kube::multinode::start_k8s_worker() {
   # TODO: Get rid of --hostname-override
   docker run -d \
     -v /etc/flocker:/etc/flocker \
+    -e "FLOCKER_CONTROL_SERVICE_HOST=172.17.13.43" \
+    -e "FLOCKER_CONTROL_SERVICE_PORT=4523" \
+    -e "FLOCKER_CONTROL_SERVICE_CA_FILE=/etc/flocker/cluster.crt" \
+    -e "FLOCKER_CONTROL_SERVICE_CLIENT_KEY_FILE=/etc/flocker/node.key" \
+    -e "FLOCKER_CONTROL_SERVICE_CLIENT_CERT_FILE=/etc/flocker/node.crt" \
     --net=host \
     --pid=host \
     --privileged \
