@@ -345,8 +345,8 @@ kube::multinode::start_k8s_master() {
     -e "FLOCKER_CONTROL_SERVICE_HOST=172.17.13.43" \
     -e "FLOCKER_CONTROL_SERVICE_PORT=4523" \
     -e "FLOCKER_CONTROL_SERVICE_CA_FILE=/etc/flocker/cluster.crt" \
-    -e "FLOCKER_CONTROL_SERVICE_CLIENT_KEY_FILE=/etc/flocker/control-service.key" \
-    -e "FLOCKER_CONTROL_SERVICE_CLIENT_CERT_FILE=/etc/flocker/control-service.crt" \
+    -e "FLOCKER_CONTROL_SERVICE_CLIENT_KEY_FILE=/etc/flocker/kubernetes.key" \
+    -e "FLOCKER_CONTROL_SERVICE_CLIENT_CERT_FILE=/etc/flocker/kubernetes.crt" \
     --net=host \
     --pid=host \
     --privileged \
