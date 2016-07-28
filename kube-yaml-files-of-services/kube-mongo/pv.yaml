@@ -9,7 +9,7 @@
       - ReadWriteOnce
       - ReadWriteMany
     flocker:
-      datasetName: flocker-9aa093fc-7ef7-476a-94b6-f275f3cc9b0e
+      datasetName: my-volume
  
 
 

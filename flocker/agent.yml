@@ -1,6 +1,6 @@
 "version": 1
 "control-service":
-   "hostname": "kube-master"
+   "hostname": "172.17.13.43"
    "port": 4524
 
 # The dataset key below selects and configures a dataset backend (see below: aws/openstack/etc).
@@ -9,10 +9,11 @@
 dataset:
    backend: "openstack"
    region: "RegionOne"
-   zone: "nova"
    verify_peer: false
    auth_plugin: "password"
-   auth_url: "http://dnetcloud.cs.kuleuven.be:5000/v2.0"
+   auth_url: ""
    username: "eddy"
    password: ""
-   tenant-id: ""
+   tenant_name: "eddy"
+   network: ""
+   
