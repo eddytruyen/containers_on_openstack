@@ -229,7 +229,7 @@ start_k8s(){
             --cluster-dns=10.0.0.10 \
             --cluster-domain=cluster.local \
             --cloud-provider=openstack \
-            --cloud-config=/openstack/cloud-config \
+            --cloud-config=/openstack/cloud_config \
             --containerized \
             --v=2
 

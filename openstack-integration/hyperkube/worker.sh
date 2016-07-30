@@ -209,7 +209,7 @@ start_k8s() {
             --cluster-domain=cluster.local \
             --containerized \
             --cloud-provider=openstack \
-            --cloud-config=/openstack/cloud-config
+            --cloud-config=/openstack/cloud_config \
             --v=2
 
     docker run \
