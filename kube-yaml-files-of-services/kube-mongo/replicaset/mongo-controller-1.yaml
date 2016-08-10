@@ -10,6 +10,7 @@ spec:
     metadata:
       labels:
         name: mongo-node-1
+        rs-name: decomads
     spec:
       containers:
         - name: mongo-node-1
@@ -30,9 +31,7 @@ spec:
           volumeMounts:
           - name: mypd
             mountPath: /data/db
-      nodeSelector:
-        mongodbHost-1: "true"
       volumes:
         - name: mypd
-          hostPath:
-            path: /data/db
+          flocker:
+            datasetName: mongodb-1
