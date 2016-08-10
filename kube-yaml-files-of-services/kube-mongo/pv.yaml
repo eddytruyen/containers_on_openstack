@@ -9,7 +9,7 @@
       - ReadWriteOnce
       - ReadWriteMany
     flocker:
-      datasetName: my-volume
+      datasetName: abcdef
  
 
 
