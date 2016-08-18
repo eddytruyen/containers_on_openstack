@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: tomcat-controller
+  name: tomcat-controller-t10
 spec:
   replicas: 2
   # selector identifies the set of Pods that this
@@ -22,10 +22,3 @@ spec:
         image: tomcat:8.0-jre7
         ports:
         - containerPort: 8080
-#        resources:
-#          limits:
-#            cpu: 2
-#            memory: 1Gi
-#          requests:
-#            cpu: 1
-#            memory: 200Mi

@@ -1,0 +1,190 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: tomcat-service-t1
+spec:
+  ports:
+  - port: 80 
+    # the port that this service should serve on
+    # the container on each pod to connect to, can be a name
+    # (e.g. 'www') or a number (e.g. 80)
+    targetPort: 8080
+    protocol: TCP
+    nodePort: 30001 
+  # just like the selector in the replication controller,
+  # but this time it identifies the set of pods to load balance
+  # traffic to.
+  selector:
+    app: tomcat
+  type: NodePort
+apiVersion: v1
+kind: Service
+metadata:
+  name: tomcat-service-t2
+spec:
+  ports:
+  - port: 80 
+    # the port that this service should serve on
+    # the container on each pod to connect to, can be a name
+    # (e.g. 'www') or a number (e.g. 80)
+    targetPort: 8080
+    protocol: TCP
+    nodePort: 30001 
+  # just like the selector in the replication controller,
+  # but this time it identifies the set of pods to load balance
+  # traffic to.
+  selector:
+    app: tomcat
+  type: NodePort
+apiVersion: v1
+kind: Service
+metadata:
+  name: tomcat-service-t3
+spec:
+  ports:
+  - port: 80 
+    # the port that this service should serve on
+    # the container on each pod to connect to, can be a name
+    # (e.g. 'www') or a number (e.g. 80)
+    targetPort: 8080
+    protocol: TCP
+    nodePort: 30001 
+  # just like the selector in the replication controller,
+  # but this time it identifies the set of pods to load balance
+  # traffic to.
+  selector:
+    app: tomcat
+  type: NodePort
+apiVersion: v1
+kind: Service
+metadata:
+  name: tomcat-service-t4
+spec:
+  ports:
+  - port: 80 
+    # the port that this service should serve on
+    # the container on each pod to connect to, can be a name
+    # (e.g. 'www') or a number (e.g. 80)
+    targetPort: 8080
+    protocol: TCP
+    nodePort: 30001 
+  # just like the selector in the replication controller,
+  # but this time it identifies the set of pods to load balance
+  # traffic to.
+  selector:
+    app: tomcat
+  type: NodePort
+apiVersion: v1
+kind: Service
+metadata:
+  name: tomcat-service-t5
+spec:
+  ports:
+  - port: 80 
+    # the port that this service should serve on
+    # the container on each pod to connect to, can be a name
+    # (e.g. 'www') or a number (e.g. 80)
+    targetPort: 8080
+    protocol: TCP
+    nodePort: 30001 
+  # just like the selector in the replication controller,
+  # but this time it identifies the set of pods to load balance
+  # traffic to.
+  selector:
+    app: tomcat
+  type: NodePort
+apiVersion: v1
+kind: Service
+metadata:
+  name: tomcat-service-t6
+spec:
+  ports:
+  - port: 80 
+    # the port that this service should serve on
+    # the container on each pod to connect to, can be a name
+    # (e.g. 'www') or a number (e.g. 80)
+    targetPort: 8080
+    protocol: TCP
+    nodePort: 30001 
+  # just like the selector in the replication controller,
+  # but this time it identifies the set of pods to load balance
+  # traffic to.
+  selector:
+    app: tomcat
+  type: NodePort
+apiVersion: v1
+kind: Service
+metadata:
+  name: tomcat-service-t7
+spec:
+  ports:
+  - port: 80 
+    # the port that this service should serve on
+    # the container on each pod to connect to, can be a name
+    # (e.g. 'www') or a number (e.g. 80)
+    targetPort: 8080
+    protocol: TCP
+    nodePort: 30001 
+  # just like the selector in the replication controller,
+  # but this time it identifies the set of pods to load balance
+  # traffic to.
+  selector:
+    app: tomcat
+  type: NodePort
+apiVersion: v1
+kind: Service
+metadata:
+  name: tomcat-service-t8
+spec:
+  ports:
+  - port: 80 
+    # the port that this service should serve on
+    # the container on each pod to connect to, can be a name
+    # (e.g. 'www') or a number (e.g. 80)
+    targetPort: 8080
+    protocol: TCP
+    nodePort: 30001 
+  # just like the selector in the replication controller,
+  # but this time it identifies the set of pods to load balance
+  # traffic to.
+  selector:
+    app: tomcat
+  type: NodePort
+apiVersion: v1
+kind: Service
+metadata:
+  name: tomcat-service-t9
+spec:
+  ports:
+  - port: 80 
+    # the port that this service should serve on
+    # the container on each pod to connect to, can be a name
+    # (e.g. 'www') or a number (e.g. 80)
+    targetPort: 8080
+    protocol: TCP
+    nodePort: 30001 
+  # just like the selector in the replication controller,
+  # but this time it identifies the set of pods to load balance
+  # traffic to.
+  selector:
+    app: tomcat
+  type: NodePort
+apiVersion: v1
+kind: Service
+metadata:
+  name: tomcat-service-t10
+spec:
+  ports:
+  - port: 80 
+    # the port that this service should serve on
+    # the container on each pod to connect to, can be a name
+    # (e.g. 'www') or a number (e.g. 80)
+    targetPort: 8080
+    protocol: TCP
+    nodePort: 30001 
+  # just like the selector in the replication controller,
+  # but this time it identifies the set of pods to load balance
+  # traffic to.
+  selector:
+    app: tomcat
+  type: NodePort
