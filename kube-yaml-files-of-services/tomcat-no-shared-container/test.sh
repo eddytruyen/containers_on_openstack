@@ -1,0 +1,1 @@
+echo 100x100 calls >> run2; date >> run2; for a in `seq 10`; do for i in 113 41 177 67 167 112 106 80 254 230; do for j in `seq 100`; do curl 10.0.0.$i//manager/reload?path=/ > /dev/null ; done; done; done; date >> run2
