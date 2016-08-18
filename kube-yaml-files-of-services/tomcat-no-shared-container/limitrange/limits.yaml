@@ -16,7 +16,7 @@ spec:
       memory: 512Mi
     defaultRequest:
       cpu: 75m
-      memory: 512Mi
+      memory: 256Mi
     max:
       cpu: 125m
       memory: 512Mi
