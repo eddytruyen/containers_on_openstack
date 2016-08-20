@@ -1,1 +1,1 @@
-echo 100x100 calls >> run2; date >> run2; for a in `seq 10`; do for i in 113 41 177 67 167 112 106 80 254 230; do for j in `seq 100`; do curl 10.0.0.$i//manager/reload?path=/ > /dev/null ; done; done; done; date >> run2
+echo 100x100 calls >> run1; date >> run1; for a in `seq 100`; do for i in 32041 31856 32760 31979 32366 30815 32284 31497 30860 31950; do for j in `seq 10`; do curl -w "@curl-format.txt" -o /dev/null 172.17.13.45:$i >> run1.csv; done; done; done; date >> run1 

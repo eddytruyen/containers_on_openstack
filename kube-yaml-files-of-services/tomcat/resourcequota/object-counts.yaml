@@ -4,8 +4,8 @@ metadata:
   name: object-counts
 spec:
   hard:
-    configmaps: "10"
-    persistentvolumeclaims: "12"
-    replicationcontrollers: "3"
-    secrets: "10"
-    services: "10"
+    configmaps: "330"
+    persistentvolumeclaims: "1000"
+    replicationcontrollers: "330"
+    secrets: "330"
+    services: "330"
