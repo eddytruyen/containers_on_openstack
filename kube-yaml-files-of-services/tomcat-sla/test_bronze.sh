@@ -1,0 +1,1 @@
+echo 1000x1000 calls >> run_bronze; date >> run_bronze; for a in `seq 100`; do for i in 31022; do for j in `seq 1000`; do curl -w "@curl-format.txt" -o /dev/null -s 172.17.13.45:$i >> run_tomcat-bronze.csv; done; done; done; date >> run_bronze

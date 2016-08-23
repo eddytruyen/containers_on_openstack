@@ -1,4 +1,4 @@
-%{time_total}\n
+%{time_connect}; %{time_starttransfer}; %{time_total}\n
 
 
 
