@@ -14,7 +14,7 @@ Some interesting pages to look into:
   * [Explanation of the install scripts](../../wiki/Deploying-a-kubernetes-cluster-based-on-the-docker-multi-node-project)
 
 * [Juju-orchestrated highly available Kubernetes cluster](http://containers.juju.solutions/)
-  * [Juju + Openstack integration notes](Deploying-a-highly-available-kubernetes-cluster-via-juju)
+  * [Juju + Openstack integration notes](../../wiki/Deploying-a-highly-available-kubernetes-cluster-via-juju)
 
 * Integration with openstack:
   * [Automated migration of Cinder volumes using Flocker](../../wiki/Installing-Flocker-for-automated-volume-migration)
