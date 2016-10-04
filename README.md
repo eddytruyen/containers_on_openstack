@@ -18,4 +18,4 @@ Some interesting pages to look into:
   * [Portable multi-node Kubernetes + Flocker](https://github.com/eddytruyen/kube-deploy/tree/master/docker-multinode)
 
 * Installation of mongodb and cassandra in Kubernetes and Docker Swarm  
-  * [Basic setup without volume migration](../../wiki/Information-for-reproducing)
+  * [Basic setup without volume migration](../../wiki/Information-for-reproducing-basic-deployment-of-no-sql-databases-without-volume-migration)
