@@ -7,3 +7,15 @@ More specifically, the goal is to analyze the performance, cost-efficiency and s
 The primary goals of this github project are:
 - Creating a wiki that collects our experiences with container orchestration systems in an Openstack environment, so I don't forget about the lessons learned.  Hopefully others benefit from this too.
 - Specific pages of the wiki are dedicated to providing experimental data to fellow researchers so they can reproduce our experimental test setups. These pages link to installation scripts that we have used to bootstrap container orchestration systems. 
+
+Some interesting pages to look into:
+
+* [Portable multi-node Kubernetes-cluster using Docker](https://github.com/kubernetes/kube-deploy/tree/master/docker-multinode)
+
+* Integration with openstack:
+  * [Integration with the openstack cloud-provider](../../wiki/Openstack-integration-and-Cinder)
+  * [Automated migration of Cinder volumes using Flocker](../../wiki/Installing-Flocker-for-automated-volume-migration)
+  * [Portable multi-node Kubernetes + Flocker](https://github.com/eddytruyen/kube-deploy/tree/master/docker-multinode)
+
+* Installation of mongodb and cassandra in Kubernetes and Docker Swarm  
+  * [Basic setup without volume migration](../../wiki/Information-for-reproducing)
