@@ -7,4 +7,5 @@ Pin-Priority: 700
 EOF
 sudo mv /tmp/apt-pref /etc/apt/preferences.d/buildbot-700
 sudo apt-get update
-sudo apt-get -y install --force-yes clusterhq-flocker-cli=1.13.0-1
+sudo apt-get -y install --force-yes clusterhq-flocker-cli
+#13.01-1
