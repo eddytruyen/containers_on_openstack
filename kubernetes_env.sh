@@ -1,6 +1,5 @@
-export K8S_VERSION=v1.2.6
-#export FLANNEL_VERSION=0.5.5
-#export FLANNEL_IFACE=eth0
-#export FLANNEL_IPMASQ=false
-export MASTER_IP=172.17.13.43
+#!/bin/bash
+
+KUBE_DEPLOY_HOMEDIR=/home/ubuntu
+
 
