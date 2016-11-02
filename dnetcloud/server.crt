@@ -1,104 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<title>DistriNet Code</title>
-<meta name="description" content="Redmine" />
-<meta name="keywords" content="issue,bug,tracker" />
-<meta content="authenticity_token" name="csrf-param" />
-<meta content="G+6yGMZByMtaSBeuuBOJSYkNU9ZH8uQ55uwvmJy4Is0=" name="csrf-token" />
-<link rel='shortcut icon' href='/favicon.ico?1413918791' />
-<link href="/stylesheets/jquery/jquery-ui-1.11.0.css?1413918791" media="all" rel="stylesheet" type="text/css" />
-<link href="/stylesheets/application.css?1413918791" media="all" rel="stylesheet" type="text/css" />
-
-<script src="/javascripts/jquery-1.11.1-ui-1.11.0-ujs-3.1.1.js?1413918791" type="text/javascript"></script>
-<script src="/javascripts/application.js?1413918791" type="text/javascript"></script>
-<script type="text/javascript">
-//<![CDATA[
-$(window).load(function(){ warnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
-//]]>
-</script>
-
-<link href="/plugin_assets/redmine_git_hosting/stylesheets/application.css?1428493599" media="screen" rel="stylesheet" type="text/css" />
-
-<!-- page specific tags -->
-</head>
-<body class="controller-account action-login">
-<div id="wrapper">
-<div id="wrapper2">
-<div id="wrapper3">
-<div id="top-menu">
-    <div id="account">
-        <ul><li><a href="/login" class="login">Sign in</a></li></ul>    </div>
-    
-    </div>
-
-<div id="header">
-
-    <h1>DistriNet Code</h1>
-
-</div>
-
-<div id="main" class="nosidebar">
-    <div id="sidebar">
-        
-        
-    </div>
-
-    <div id="content">
-        
-        
-<div id="login-form">
-<form accept-charset="UTF-8" action="/login" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="G+6yGMZByMtaSBeuuBOJSYkNU9ZH8uQ55uwvmJy4Is0=" /></div>
-<input name="back_url" type="hidden" value="https://dnetcode.cs.kuleuven.be/attachments/download/1152/server.crt" />
-<table>
-<tr>
-    <td style="text-align:right;"><label for="username">Login:</label></td>
-    <td style="text-align:left;"><input id="username" name="username" tabindex="1" type="text" /></td>
-</tr>
-<tr>
-    <td style="text-align:right;"><label for="password">Password:</label></td>
-    <td style="text-align:left;"><input id="password" name="password" tabindex="2" type="password" /></td>
-</tr>
-<tr>
-    <td></td>
-    <td style="text-align:left;">
-    </td>
-</tr>
-<tr>
-    <td style="text-align:left;">
-            <a href="/account/lost_password">Lost password</a>
-    </td>
-    <td style="text-align:right;">
-        <input type="submit" name="login" value="Login &#187;" tabindex="5"/>
-    </td>
-</tr>
-</table>
-</form></div>
-
-
-<script type="text/javascript">
-//<![CDATA[
-$('#username').focus();
-//]]>
-</script>
-
-        
-        <div style="clear:both;"></div>
-    </div>
-</div>
-</div>
-
-<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
-<div id="ajax-modal" style="display:none;"></div>
-
-<div id="footer">
-  <div class="bgl"><div class="bgr">
-    Powered by <a href="http://www.redmine.org/">Redmine</a> &copy; 2006-2014 Jean-Philippe Lang
-  </div></div>
-</div>
-</div>
-</div>
-
-</body>
-</html>
+-----BEGIN CERTIFICATE-----
+MIID5DCCAswCCQCLse97FpQDejANBgkqhkiG9w0BAQUFADCBszELMAkGA1UEBhMC
+QkUxFzAVBgNVBAgMDlZsYWFtcy1CcmFiYW50MQ8wDQYDVQQHDAZMZXV2ZW4xETAP
+BgNVBAoMCEtVTGV1dmVuMRIwEAYDVQQLDAlEaXN0cmlOZXQxJDAiBgNVBAMMG2Ru
+ZXRjbG91ZHNzaC5jcy5rdWxldXZlbi5iZTEtMCsGCSqGSIb3DQEJARYeYmFydC52
+YW5icmFiYW50QGNzLmt1bGV1dmVuLmJlMB4XDTEzMDcxODA3MzY1NloXDTIzMDcx
+NjA3MzY1NlowgbMxCzAJBgNVBAYTAkJFMRcwFQYDVQQIDA5WbGFhbXMtQnJhYmFu
+dDEPMA0GA1UEBwwGTGV1dmVuMREwDwYDVQQKDAhLVUxldXZlbjESMBAGA1UECwwJ
+RGlzdHJpTmV0MSQwIgYDVQQDDBtkbmV0Y2xvdWRzc2guY3Mua3VsZXV2ZW4uYmUx
+LTArBgkqhkiG9w0BCQEWHmJhcnQudmFuYnJhYmFudEBjcy5rdWxldXZlbi5iZTCC
+ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL79TEB5lPzJPPghux1rrxi9
+eLtRUzlvHslSSQwU9jS/gYSjPIcCRS8xgANwKyUa35ANkB0Whi2OfGsBF4fAnZ0V
+XcWEzUUhBWICpes03mUYqISQ2yUEXFEdji5DIL5I2bfynWYurXfcQiE6rcm4mkAD
+LBxKSGwTM2c0UfeoQie+BysSM/ogI9G1CRMh7z4SwsGFQgjZw6MFCpMJGkleI4Au
+XdOSq3jS1H2U/UInh2mgE/y5zfeho5UOFb0FDPprYhlfGa9iw15wvYsWfdEvvqG0
+fDKTQb1F0e4TFWmubx718K06CtjUNY/Ihy2bXcjPGISGyUYvhe/vyt7GYm8CQwcC
+AwEAATANBgkqhkiG9w0BAQUFAAOCAQEASQ1yLVaFkPWx47Kt2BHO2GyphxinNEuL
+dQFG1B3F4HnMcxzpDVu7OLeufBBuHFbaSr6SiqsfLIGqF2ZnjHWF2WOF9k0tARAX
+K6NWtMj7te8fzst0e0NBGXQG8MdtAvRF13MZiTcwd0yJxhKA0S+/sVy6V2Fizxsx
+sFg1/czMQqUEUcuIuKKiBs75iE2uxAuslipTQCF9OmdYg6wj+jMoUR98veLwlC+j
+mj36w/akUW/UO5SFs1aC3JnyrnQDMyBGBsPUrQDnCKbWyFU5LBIWantFG+mH07zf
+ZFjpxG1zN06513Hzi658wca7KYfUJnZEh8BhrfaD4nxDWmQw52Z0xQ==
+-----END CERTIFICATE-----
