@@ -11,3 +11,5 @@ mv /tmp/apt-pref /etc/apt/preferences.d/buildbot-700
 apt-get update
 apt-get -y install --force-yes clusterhq-flocker-node
 #1.13.0-1
+apt-get -y install --force-yes clusterhq-flocker-docker-plugin
+
