@@ -34,4 +34,4 @@ spec:
       volumes:
         - name: mypd
           flocker:
-            datasetName: mongodb-2
+            datasetName: mongo-2
