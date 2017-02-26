@@ -9,5 +9,5 @@ spec:
     - port: 27017
       targetPort: 27017
   selector:
-    name: mongo-node-port
+    name: mongo-container-port
   type: NodePort
