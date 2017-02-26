@@ -10,4 +10,4 @@ if [[ $files =~ .*$1.* ]] ; then
   exit
 fi
 
-dstat -t -cp  -mgs --vm -r -d  -D total --fs --lock  -n --socket  --ipc  -y --noheaders --output $1 --noupdate 5  > /dev/null
+dstat -T -t -cp  -mgs --vm -r -d  -D total --fs --lock  -n --socket  --ipc  -y --noheaders --output $1 --noupdate 5  > /dev/null
