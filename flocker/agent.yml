@@ -1,6 +1,6 @@
 "version": 1
 "control-service":
-   "hostname": "172.17.13.43"
+   "hostname": "172.17.13.131"
    "port": 4524
 
 # The dataset key below selects and configures a dataset backend (see below: aws/openstack/etc).
@@ -11,9 +11,12 @@ dataset:
    region: "RegionOne"
    verify_peer: false
    auth_plugin: "password"
-   auth_url: ""
-   username: "eddy"
+   auth_url: "https://dnetcloud.cs.kuleuven.be:35357/v3"
+   username: ""
    password: ""
-   tenant_name: "eddy"
+   tenant_name: ""
    network: ""
-   
+   project_domain_name: "default"
+   user_domain_name: "default"
+   identity_api_version: "3"
+   image_api_version: "2"
