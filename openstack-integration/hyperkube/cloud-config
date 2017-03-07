@@ -1,0 +1,12 @@
+#copy this file to kubernetes/cluster/images/hyperkube
+[Global]
+auth-url=https://dnetcloud.cs.kuleuven.be:35357/v3
+username=eddy
+region=RegionOne
+password=
+tenant-name=eddy
+domain-name=default
+#api-key=3
+#image_api_version=2
+
+
