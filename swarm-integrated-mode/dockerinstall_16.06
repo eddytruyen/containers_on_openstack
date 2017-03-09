@@ -9,4 +9,4 @@ apt-get install docker-engine -y
 service docker start
 groupadd docker
 usermod -aG docker ubuntu
-./pinversions
+./pinversions_16_06.sh
