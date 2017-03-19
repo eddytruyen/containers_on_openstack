@@ -1,0 +1,29 @@
+# db-controller.yml
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  labels:
+    name: ycsb
+  name: ycsb
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: ycsb
+    spec:
+      containers:
+      - image: decomads/ycsb
+        name: ycsb
+        command:
+            - start.sh
+        volumeMounts:
+        - mountPath: /data/results
+          name: mypd
+      nodeSelector:
+        ycsb-node: "true"
+      volumes:
+        - name: mypd
+          hostPath:
+            path: /data/results
+             
