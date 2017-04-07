@@ -13,12 +13,12 @@ spec:
         name: ycsb
     spec:
       containers:
-      - image: decomads/ycsb
+      - image: decomads/ycsb-middleware2017
         name: ycsb
         command:
             - start.sh
         volumeMounts:
-        - mountPath: /data/results
+        - mountPath: /results
           name: mypd
       nodeSelector:
         ycsb-node: "true"
