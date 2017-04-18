@@ -12,3 +12,4 @@ sudo service docker start
 sudo groupadd docker
 sudo usermod -aG docker ubuntu
 ./pinversions
+sudo iptables -P FORWARD ACCEPT
