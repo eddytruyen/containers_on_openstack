@@ -6,8 +6,7 @@ sudo apt-get update
 apt-cache policy docker-engine
 sudo apt-get update
 sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual -y
-sudo apt-get install -y docker.io
-#docker-engine=1.12.6-0~ubuntu-trusty -y
+sudo apt-get install docker-engine=1.12.6-0~ubuntu-trusty -y
 #1.12.3-0~trusty -y
 sudo service docker start
 sudo groupadd docker
