@@ -7,6 +7,5 @@ apt-get update
 ./dockerinstall
 apt-get update
 # Install docker if you don't have it already.
-apt-get install kubelet kubectl kubernetes-cni
-apt-get install kubeadm=1.5.7-00
+apt-get install kubeadm=1.5.7-00 kubelet=1.6.1-00 kubectl kubernetes-cni
 ./pinversions.sh
