@@ -1,5 +1,5 @@
 sudo apt-get update
-sudo apt-get dist-upgrade -y
+#sudo apt-get dist-upgrade -y
 echo "deb http://www.apache.org/dist/cassandra/debian 20x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list
 echo "deb-src http://www.apache.org/dist/cassandra/debian 20x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list
 gpg --keyserver pgp.mit.edu --recv-keys F758CE318D77295D
