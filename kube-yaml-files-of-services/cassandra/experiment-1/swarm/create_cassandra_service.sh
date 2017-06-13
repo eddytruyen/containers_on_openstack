@@ -1,0 +1,1 @@
+docker service create --network overlay --constraint node.hostname==docker-swarm-worker --name cassandra-service --mount target=/data/db,source=cassandra,type=volume,volume-driver=local --publish mode=host,target=9042,published=9042,protocol=tcp --publish mode=host,target=9160,published=9160,protocol=tcp cassandra:2.0 
