@@ -13,7 +13,7 @@ spec:
         name: mongo
     spec:
       containers:
-      - image: mongo:3.2.12
+      - image: mongo:3.2.4
         name: mongo
         command:
             - mongod
