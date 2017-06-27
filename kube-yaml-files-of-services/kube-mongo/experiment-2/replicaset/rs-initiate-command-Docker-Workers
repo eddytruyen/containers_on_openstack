@@ -4,8 +4,8 @@ rs.initiate({
      "members" : [
           {
                "_id" : 0,
-               "host" : "10.0.0.139",
-               "priority" : 10,
+               "host" : "172.17.13.49",
+               "priority" : 1,
 	       "arbiterOnly" : false,
                "buildIndexes" : true,
                "hidden" : false,
@@ -14,8 +14,8 @@ rs.initiate({
           },
           {
                "_id" : 1,
-               "host" : "10.0.0.47",
-               "priority" : 9,
+               "host" : "172.17.13.162",
+               "priority" : 1,
                "arbiterOnly" : false,
                "buildIndexes" : true,
                "hidden" : false,
@@ -25,8 +25,9 @@ rs.initiate({
           },
           {
                "_id" : 2,
-               "host" : "10.0.0.31",
-               "arbiterOnly" : true,
+               "host" : "172.17.13.51",
+               "priority" : 1,
+               "arbiterOnly" : false,
                "buildIndexes" : true,
                "hidden" : false,
                "slaveDelay" : NumberLong(0),
