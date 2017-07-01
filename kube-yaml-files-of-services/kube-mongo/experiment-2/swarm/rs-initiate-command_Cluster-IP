@@ -1,0 +1,45 @@
+rs.initiate({
+     "_id" : "rs0",
+     "version" : 1,
+     "members" : [
+          {
+               "_id" : 0,
+               "host" : "10.0.0.2:27017",
+               "priority" : 10,
+	       "arbiterOnly" : false,
+               "buildIndexes" : true,
+               "hidden" : false,
+               "slaveDelay" : NumberLong(0),
+               "votes" : 1
+          },
+          {
+               "_id" : 1,
+               "host" : "10.0.0.4:27017",
+               "priority" : 9,
+               "arbiterOnly" : false,
+               "buildIndexes" : true,
+               "hidden" : false,
+               "slaveDelay" : NumberLong(0),
+               "votes" : 1
+
+          },
+          {
+               "_id" : 2,
+               "host" : "10.0.0.6:27017",
+               "priority" : 8,
+               "arbiterOnly" : true,
+               "buildIndexes" : true,
+               "hidden" : false,
+               "slaveDelay" : NumberLong(0),
+               "votes" : 1
+          }
+     ],
+     "settings" : {
+              "chainingAllowed" : true,
+              "heartbeatIntervalMillis" : 2000,
+              "heartbeatTimeoutSecs" : 10,
+              "electionTimeoutMillis" : 10000
+        }
+
+});
+
