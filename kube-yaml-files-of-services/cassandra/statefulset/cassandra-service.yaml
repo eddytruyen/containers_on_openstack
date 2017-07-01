@@ -9,4 +9,4 @@ spec:
   ports:
     - port: 9042
   selector:
-    name: cassandra
+    app: cassandra

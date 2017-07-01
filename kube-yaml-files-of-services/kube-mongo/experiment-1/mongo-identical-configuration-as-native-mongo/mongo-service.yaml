@@ -8,7 +8,6 @@ spec:
   ports:
     - port: 27017
       targetPort: 27017
-      nodePort: 32004
   selector:
     name: mongo
-  type: LoadBalancer
+  type: ClusterIP
