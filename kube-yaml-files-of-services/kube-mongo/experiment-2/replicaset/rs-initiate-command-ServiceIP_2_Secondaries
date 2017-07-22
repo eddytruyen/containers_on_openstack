@@ -4,7 +4,7 @@ rs.initiate({
      "members" : [
           {
                "_id" : 0,
-               "host" : "10.0.0.151",
+               "host" : "10.0.0.115",
                "priority" : 10,
 	       "arbiterOnly" : false,
                "buildIndexes" : true,
@@ -14,7 +14,7 @@ rs.initiate({
           },
           {
                "_id" : 1,
-               "host" : "10.0.0.48",
+               "host" : "10.0.0.246",
                "priority" : 9,
                "arbiterOnly" : false,
                "buildIndexes" : true,
@@ -25,7 +25,7 @@ rs.initiate({
           },
           {
                "_id" : 2,
-               "host" : "10.0.0.253",
+               "host" : "10.0.0.106",
                "priority" : 8,
                "arbiterOnly" : false,
                "buildIndexes" : true,
