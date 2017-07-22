@@ -13,9 +13,4 @@ Some interesting pages to look into:
 * [Portable multi-node Kubernetes-cluster using Docker](https://github.com/kubernetes/kube-deploy/tree/master/docker-multinode)
   * [Explanation of the install scripts](../../wiki/Deploying-a-kubernetes-cluster-based-on-the-docker-multi-node-project)
 
-* Integration with openstack:
-  * [Automated migration of Cinder volumes using Flocker](../../wiki/Installing-Flocker-for-automated-volume-migration)
-  * [Portable multi-node Kubernetes + Flocker](https://github.com/eddytruyen/kube-deploy/tree/master/docker-multinode)
 
-* Information for reproducing experimental setups of mongodb and cassandra in Kubernetes and Docker Swarm  
-  * [Basic setup without volume migration](../../wiki/Information-for-reproducing-basic-deployment-of-no-sql-databases-without-volume-migration)
