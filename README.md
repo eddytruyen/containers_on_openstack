@@ -10,7 +10,9 @@ The primary goals of this github project are:
 
 Some interesting pages to look into:
 
-* [Portable multi-node Kubernetes-cluster using Docker](https://github.com/kubernetes/kube-deploy/tree/master/docker-multinode)
+* [Portable multi-node Kubernetes-cluster using Docker](https://github.com/eddytruyen/kube-deploy/tree/master/docker-multinode)
   * [Explanation of the install scripts](../../wiki/Deploying-a-kubernetes-cluster-based-on-the-docker-multi-node-project)
+  
+* [Installing docker swarm integrated mode](../../wiki/Docker-swarm-integrated-mode)
 
 
