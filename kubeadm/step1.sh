@@ -4,8 +4,5 @@ cat <<EOF > /etc/apt/sources.list.d/kubernetes.list
 deb http://apt.kubernetes.io/ kubernetes-xenial main
 EOF
 apt-get update
-./dockerinstall
-apt-get update
-# Install docker if you don't have it already.
-apt-get install -y kubelet kubeadm kubectl kubernetes-cni
+apt-get install -y kubelet kubeadm
 ./pinversions.sh

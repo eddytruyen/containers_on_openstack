@@ -2,9 +2,7 @@ sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58
 sudo apt-add-repository 'deb https://apt.dockerproject.org/repo ubuntu-xenial main'
 apt-get update
 apt-cache policy docker-engine
-apt-get install docker-engine=17.04.0~ce-0~ubuntu-xenial -y
-#=1.12.6-0~ubuntu-trusty -y
-#1.12.3-0~trusty -y
+apt-get install docker-engine=1.12.6-0~ubuntu-xenial -y
 service docker start
 groupadd docker
 usermod -aG docker ubuntu
