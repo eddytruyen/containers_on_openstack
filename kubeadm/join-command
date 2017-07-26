@@ -1,0 +1,1 @@
+kubeadm join --token f336e1.f7e586f9b1afa662 172.17.13.231:6443
