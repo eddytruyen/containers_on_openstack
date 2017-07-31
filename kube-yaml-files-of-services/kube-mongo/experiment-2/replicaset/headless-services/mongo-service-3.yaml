@@ -14,12 +14,12 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    name: mongo-2
-  name: mongo-2
+    name: mongo-3
+  name: mongo-3
 spec:
   ports:
     - port: 27017
       targetPort: 27017
   selector:
-    name: mongo-node-2
-  type: NodePort
+    name: mongo-node-3
+  clusterIP: None
