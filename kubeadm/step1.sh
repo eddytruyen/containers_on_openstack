@@ -5,5 +5,5 @@ deb http://apt.kubernetes.io/ kubernetes-xenial main
 EOF
 apt-get update
 ./dockerinstall
-apt-get install -y kubelet kubeadm
+apt-get install -y kubelet=1.7.2-00 kubeadm=1.7.2-00
 ./pinversions.sh
