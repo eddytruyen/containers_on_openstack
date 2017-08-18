@@ -14,4 +14,4 @@ if [[ $files =~ .*$filename.* ]] ; then
   exit
 fi
 
-dstat -T -t -cp  -mgs --vm -r -d  -D total --fs --lock  -N eth0 --socket  --ipc  -y --noheaders --output $filename --noupdate 5  > /dev/null
+dstat -T -t -cp  -mgs --vm -r -d  -D total --fs --lock  -N ens3 --socket  --ipc  -y --noheaders --output $filename --noupdate 5  > /dev/null
