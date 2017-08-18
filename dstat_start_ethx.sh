@@ -9,7 +9,7 @@ if (( l==0 )); then
   exit
 fi
 files=`ls`
-filename=$1$2-`hostname`.csv
+filename=$1_NET-$2-`hostname`.csv
 if [[ $files =~ .*$filename.* ]] ; then
   echo file $filename already exists
   exit
