@@ -37,6 +37,8 @@ spec:
           volumeMounts:
             - mountPath: /var/lib/cassandra/data
               name: data
+      nodeSelector:
+        cassandraHost: "true"
       volumes:
         - name: data
           hostPath:
