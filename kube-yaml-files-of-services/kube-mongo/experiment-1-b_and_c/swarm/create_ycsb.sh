@@ -1,1 +1,1 @@
-docker service create --constraint node.hostname==docker-swarm-worker-near-ycsb --network overlay --name ycsb decomads/ycsb start.sh
+docker service create --constraint node.hostname==ycsb-3 --network myweave --name ycsb decomads/ycsb-middleware2017 start.sh
