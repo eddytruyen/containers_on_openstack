@@ -1,0 +1,23 @@
+version: "3.1"
+services:
+  mongo:
+    deploy:
+      replicas: 3
+      placement:
+        constraints: [node.labels.db-host == true]
+    image: mongo:3.2.4
+    command: mongod --replSet rs0 --logappend --logpath /var/log/mongodb/mongod.log --bind_ip 0.0.0.0
+    volumes:
+    - volume2:/data/db
+    ports:
+    - "27017"
+    networks:
+      default:
+volumes:
+  volume2:
+    driver: local
+networks:
+  default:
+    external:
+       name: cassandra-net
+
