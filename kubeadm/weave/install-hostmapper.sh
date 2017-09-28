@@ -1,5 +1,5 @@
 cd /tmp && mkdir cni-plugins && cd cni-plugins && \
-    wget https://github.com/containernetworking/plugins/releases/download/v0.6.0-rc1/cni-plugins-amd64-v0.6.0-rc1.tgz && \
+    wget https://github.com/containernetworking/plugins/releases/download/v0.6.0/cni-plugins-amd64-v0.6.0.tgz && \
     tar zxfv cni-plugins-amd64-v0.6.0.tgz
 sudo cp /tmp/cni-plugins/portmap /opt/cni/bin/
 sudo sh -c 'cat >/etc/cni/net.d/10-mynet.conflist <<-EOF
