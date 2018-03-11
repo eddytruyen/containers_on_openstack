@@ -1,0 +1,2 @@
+approriate mem limits set in /etc/init/dockerd (see Cassandra installation notes 
+in github.com/eddytruyen/containers_on_openstack
