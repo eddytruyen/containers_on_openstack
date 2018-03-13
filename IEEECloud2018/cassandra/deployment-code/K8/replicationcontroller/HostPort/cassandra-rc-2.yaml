@@ -1,0 +1,56 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: cassandra-2
+  # The labels will be applied automatically
+  # from the labels in the pod template, if not set
+  # labels:
+    # app: cassandra
+spec:
+  replicas: 1
+  # The selector will be applied automatically
+  # from the labels in the pod template, if not set.
+  # selector:
+      #app: cassandra
+  template:
+    metadata:
+      labels:
+        app: cassandra-2
+    spec:
+      containers:
+        - env:
+            - name: CASSANDRA_SEEDS
+              value: 192.168.104.159
+            - name: CASSANDRA_CLUSTER_NAME
+              value: Cassandra
+            - name: CASSANDRA_DC
+              value: DC1
+            - name: CASSANDRA_RACK
+              value: Rack1
+            - name: CASSANDRA_ENDPOINT_SNITCH
+              value: GossipingPropertyFileSnitch
+            - name: CASSANDRA_BROADCAST_ADDRESS
+              value: 192.168.104.156
+          image: decomads/cassandra:2.0
+          name: cassandra
+          ports:
+            - containerPort: 7000
+              name: intra-node
+              hostPort: 7000
+            - containerPort: 7001
+              name: tls-intra-node
+            - containerPort: 7199
+              name: jmx
+              hostPort: 7199
+            - containerPort: 9042
+              hostPort: 9042
+              name: cql
+          volumeMounts:
+            - mountPath: /var/lib/cassandra/data
+              name: data
+      nodeSelector:
+        cassandraHost-2: "true"
+      volumes:
+        - name: data
+          hostPath: 
+            path: /cassandra/db

@@ -1,0 +1,7 @@
+#create 3 containers via 3 replication controllers
+
+for i in `seq 3` do
+  kubectl create -f cassandra-rc-$i.yaml
+done
+
+ 
