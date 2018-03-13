@@ -1,0 +1,6 @@
+#install weave plugin
+./install_weave_plugin.sh
+#create weave network cassandra-net
+./create_weave_network.sh
+#install cassandra cluster
+docker stack deploy cassandra3node.yaml

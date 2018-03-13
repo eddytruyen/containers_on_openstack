@@ -1,0 +1,3 @@
+#To deploy the YCSB software in Docker Swarm run the following code:
+
+./create_ycsb.sh cassandra-net

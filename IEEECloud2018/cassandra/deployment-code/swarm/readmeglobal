@@ -1,0 +1,18 @@
+#to install cassandra as a single service using three containers
+#install the cassandra-global.yaml compose file
+#Note: Docker swarm does NOT garantuee stable container IP's when 
+#rescheduling containers
+
+
+docker stack deploy cassandra-global.yaml
+
+#Then scale to 2 nodes
+
+docker service scale cassandra-2=2
+sleep 60
+
+#Then scale to 3 nodes
+docker service scale cassandra-2=3
+
+
+

@@ -1,0 +1,18 @@
+#Execute the following command 3 times on  three different nodes
+
+./create_cassandra.sh <seedip of first cassandra node created> <ip address of local host>
+
+#e.g
+
+# on node 172.17.13.152
+./create_cassandra.sh 172.17.13.152 172.17.13.152
+
+# on node 172.17.12.153
+./create_cassandra.sh 172.17.14.152 172.17.12.153
+
+# on node 172.17.12.154
+./create_cassandra.sh 172.17.14.152 172.17.12.154
+
+
+
+

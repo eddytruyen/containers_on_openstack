@@ -1,6 +1,0 @@
-sudo add-apt-repository ppa:openjdk-r/ppa  
-sudo apt-get update 
-dpkg --get-selections | grep -v deinstall | grep openjdk
-apt-cache showpkg openjdk-7-jre-headless:amd64
-wget http://launchpadlibrarian.net/220694273/openjdk-7-jre-headless_7u85-2.6.1-5_amd64.deb
-sudo dpkg -i openjdk-7-jre-headless_7u85-2.6.1-5_amd64.deb  
