@@ -10,10 +10,6 @@ The primary goals of this github project are:
 
 Some interesting pages to look into:
 
-* [Portable multi-node Kubernetes-cluster using Docker](https://github.com/eddytruyen/kube-deploy/tree/master/docker-multinode)
-  * [Explanation of the install scripts](../../wiki/Deploying-a-kubernetes-cluster-based-on-the-docker-multi-node-project)
-  * [Integration with openstack Cinder and LBaaS services](../../wiki/Openstack-integration:-Cinder-volumes-and-Exposing-services-via-Openstack-loadbalancers-(tested-until-kubernetes-version-1.1.7))
+* [Container orchestration for deployment and management of NoSQL clusters](../../wiki/Container-orchestration-for-deployment-and-management-of-NoSQL-database-clusters)
   
-* [Installing docker swarm integrated mode](../../wiki/Docker-swarm-integrated-mode)
-
 
