@@ -1,2 +1,2 @@
-docker network create -d overlay overlay
+docker network create -d overlay cassandra-net
 

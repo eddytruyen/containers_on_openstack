@@ -1,0 +1,82 @@
+version: '3'
+services:
+  cassandra-1:
+    image: decomads/cassandra:2.0
+    deploy:
+      placement:
+        constraints: [node.hostname == docker-swarm-worker-1]
+    environment:
+      CASSANDRA_BROADCAST_ADDRESS: 172.17.13.151
+      CASSANDRA_DC: DC1
+      CASSANDRA_RACK: Rack1
+      CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
+      CASSANDRA_NATIVE_PORT: 30000
+      CASSANDRA_STORAGE_PORT: 7000
+    volumes:
+    - volume1:/var/lib/cassandra
+    ports:
+    - "7000"
+    - "7001"
+    - "7199"
+    - "30000:30000"
+    networks:
+      default:
+  cassandra-2:
+    image: decomads/cassandra:2.0
+    deploy:
+      placement:
+        constraints: [node.hostname == docker-swarm-worker-2]
+    environment:
+      CASSANDRA_BROADCAST_ADDRESS: 172.17.13.154
+      CASSANDRA_SEEDS: 172.17.13.151
+      CASSANDRA_DC: DC1
+      CASSANDRA_RACK: Rack1
+      CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
+      CASSANDRA_NATIVE_PORT: 30001
+      CASSANDRA_STORAGE_PORT: 7000
+    depends_on:
+      - cassandra-1
+    volumes:
+    - volume2:/var/lib/cassandra
+    ports:
+    - "7000"
+    - "7001"
+    - "7199"
+    - "30001:30001" 
+    networks:
+      default:
+  cassandra-3:
+    image: decomads/cassandra:2.0
+    deploy:
+      placement:
+        constraints: [node.hostname == docker-swarm-worker-3]
+    environment:
+      CASSANDRA_BROADCAST_ADDRESS: 172.17.13.201
+      CASSANDRA_SEEDS: 172.17.13.151
+      CASSANDRA_DC: DC1
+      CASSANDRA_RACK: Rack1
+      CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
+      CASSANDRA_NATIVE_PORT: 30001
+      CASSANDRA_STORAGE_PORT: 7000
+    depends_on:
+      - cassandra-2
+    volumes:
+    - volume3:/var/lib/cassandra
+    ports:
+    - "7000"
+    - "7001"
+    - "7199"
+    - "30002:30002"
+    networks:
+      default:
+volumes:
+  volume1:
+    driver: local
+  volume2:
+    driver: local
+  volume3:
+    driver: local
+networks:
+  default:
+    external:
+       name: cassandra-net
