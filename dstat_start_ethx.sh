@@ -15,4 +15,4 @@ if [[ $files =~ .*$filename.* ]] ; then
   exit
 fi
 
-dstat -N $2 --output $filename --noheaders --noupdate 5
+dstat -T -t -N $2 --output $filename --noheaders --noupdate 5
