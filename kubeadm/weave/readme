@@ -5,7 +5,7 @@ lukemarsden commented 27 days ago • edited
 FTR, I got this working without requiring git or go (but adding a dependency on wget 😏) on the target system with a small tweak to the instructions in #3016 (comment) to use the released cni-plugins v0.6.0-rc1 package. On each of your nodes, run:
 
 $ cd /tmp && mkdir cni-plugins && cd cni-plugins && \
-    wget https://github.com/containernetworking/plugins/releases/download/v0.6.0-rc1/cni-plugins-amd64-v0.6.0-rc1.tgz && \
+    wget https://github.com/containernetworking/plugins/releases/download/v0.6.0/cni-plugins-amd64-v0.6.0.tgz && \
     tar zxfv cni-plugins-amd64-v0.6.0-rc1.tgz
 $ sudo cp /tmp/cni-plugins/portmap /opt/cni/bin/
 $ sudo sh -c 'cat >/etc/cni/net.d/10-mynet.conflist <<-EOF
