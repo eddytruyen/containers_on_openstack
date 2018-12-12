@@ -1,0 +1,16 @@
+The rds files contain more data than analyzed in the paper. 
+The paper only analyzes the data from the LOAD phase of workloadA
+
+To retrieve this data execute the following R-script
+
+#load rds file, for example:
+
+workloads=readRDS("dstat_2-cassandra_usedmem_gb-worker-1.rds")
+
+native-deployment=workloads$workloada.csv$load$means$`->native-VMIP->results->2-cassandra-native-VMIP`
+
+Docker_engine-deployment=workloads$workloada.csv$load$means$`->docker-only->results->2-cassandra-docker-netishost`
+
+K8-deployment=workloads$workloada.csv$load$means$`->native-VMIP->results->2-cassandra-native-VMIP`
+
+Swarm-deployment=workloads$workloada.csv$load$means$`->swarm-ServiceIP->swarm-ServiceIP_weave-bis->results->2-cassandra-swarm-ServiceIP`
