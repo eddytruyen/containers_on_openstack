@@ -1,0 +1,3 @@
+This raw data contains data of the LOAD phase of YCSB workload A, and the RUN phase of YCSB workloads A, B, C, D and F.
+In this paper we have only analyzed the LOAD phase of YCSB workload A because we are only interested in write-heavy workloads
+with only insert operations and no reads.
