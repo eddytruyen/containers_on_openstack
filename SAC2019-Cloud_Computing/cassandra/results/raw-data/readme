@@ -1,3 +1,5 @@
 This raw data contains more data than is analyzed in the paper.
-We have only analyzed the first load phase of YCSB workload A. In all deployments, this workload phase is executed first. Thereafter a number of RUN workloads are executed. We have not analyzed these because they involve read-operations.
+We have only analyzed the LOAD phase of YCSB workload A. This workload phase is executed first in every experiment. 
+Thereafter the RUN phase of workload A and other workloads are executed. We have not analyzed these RUN phase  
+because we are only interested in write-heavy workloads with no reads.
 
