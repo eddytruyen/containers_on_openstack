@@ -1,0 +1,8 @@
+"Dstat 0.7.2 CSV output"
+"Author:","Dag Wieers <dag@wieers.com>",,,,"URL:","http://dag.wieers.com/home-made/dstat/"
+"Host:","docker-swarm-manager",,,,"User:","root"
+"Cmdline:","dstat -T -t -N ens3 --output test2_NET-ens3-docker-swarm-manager.csv --noheaders --noupdate 5",,,,"Date:","19 Jun 2018 09:18:25 UTC"
+
+"epoch","system"
+"epoch","time"
+1529399905.197,19-06 09:18:25

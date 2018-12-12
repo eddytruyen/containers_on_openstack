@@ -1,9 +1,12 @@
-apt-get update && apt-get install -y apt-transport-https
-curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
-cat <<EOF > /etc/apt/sources.list.d/kubernetes.list
-deb http://apt.kubernetes.io/ kubernetes-xenial main
+cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
 EOF
-apt-get update
-./dockerinstall
-apt-get install -y kubelet=1.7.2-00 kubeadm=1.7.2-00
-./pinversions.sh
+setenforce 0
+yum install -y kubelet-1.9.2 kubeadm-1.9.2 kubectl-1.9.2
+systemctl enable kubelet && systemctl start kubelet

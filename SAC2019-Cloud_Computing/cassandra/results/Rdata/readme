@@ -1,0 +1,17 @@
+This workload contains more data than reported in the paper. 
+
+To fetch the data that is analyzed in the paper execute the following 
+R-script:
+
+workloads=readRDS("workloads_2-cassandra-scale_xenial_weave.rds")
+
+native-deployment=workloads$workloada$insert$means$nativeVMIP1
+
+Docker_engine-deployment=workloads$workloada$insert$means$docker
+
+K8-deployment=workloads$workloada$insert$means$kubeadm_DNS1
+
+Swarm-deployment=workloads$workloada$insert$means$swarm_ServiceIP1
+
+
+

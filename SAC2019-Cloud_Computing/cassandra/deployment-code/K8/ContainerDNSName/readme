@@ -1,0 +1,20 @@
+#label nodes on which cassandra should be deployed
+
+kubectl label node cassandraHost="true"
+
+#create cassandra-service
+
+kubectl create -f cassandra-service.yaml
+
+#create replication-controller
+
+kubectl create -f cassandra-rc.yaml
+
+#scale to 2 nodes
+
+kubectl scale rc cassandra --replicas=2
+
+#scale to 3 nodes
+
+kubectl scale rc cassandra --replicas=3
+
