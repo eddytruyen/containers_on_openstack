@@ -1,11 +1,14 @@
 # db-controller.yml
-apiVersion: v1
-kind: ReplicationController
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   labels:
     name: mongo
   name: mongo-controller
 spec:
+  selector:
+    matchLabels:
+      name: mongo
   replicas: 1
   template:
     metadata:
