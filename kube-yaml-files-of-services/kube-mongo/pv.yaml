@@ -8,8 +8,8 @@
     accessModes:
       - ReadWriteOnce
       - ReadWriteMany
-    cinder:
-      volumeID: 21391666-e990-455c-9f0a-cc79d56455ec
-      fsType: ext4 
+    hostPath:
+      path: "/data/mongodb"
+      
 
 
